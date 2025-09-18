@@ -59,6 +59,9 @@ theme_tbl_df <- function(df, caption = NULL, font_pct = 85) {
 }
 ```
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 <style>
 `r scroll_css`
 
@@ -66,6 +69,19 @@ theme_tbl_df <- function(df, caption = NULL, font_pct = 85) {
   display: none;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;         /* zawijanie wierszy przy mniejszych ekranach */
+  justify-content: center; /* wyśrodkowanie całości */
+  gap: 5px;               /* odstęp między zdjęciami */
+  margin: 5px 0;
+}
+.gallery img {
+  width: 220px;            /* szerokość każdej miniaturki */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
 </style>
 
 ![](images/VG.jpg)
@@ -109,7 +125,7 @@ Atuty: szerokie portfolio, dostępność urządzeń, wsparcie techniczne, progra
 - **Intuicyjna konfiguracja** - rekuperator Plug&Play z możliwością sterowania przewodowego oraz zdalną kontrolą dzięki aplikacji VentsApp Cloud.
 - **Wysoka sprawność odzysku ciepła** - minimalizacja strat ciepła zimą i zmniejszenie obciążenia klimatyzacji latem.
 - **Silnik EC oraz wysokosprawny przeciwprądowy wymiennik ciepła** - zmniejszenia zapotrzebowania na energię cieplną budynku.
-- **Automatyczne sterowanie** - komfortowa temperatura, wilgotność oraz poziom CO2 wewnątrz budynku przez cały rok.
+- **Automatyczne sterowanie** - komfortowa temperatura, wilgotność oraz poziom CO₂ wewnątrz budynku przez cały rok.
 - **W standardzie moduł stałego przepływu powietrza** - umożliwia elestyczność zastosowania.
 - **Dostęp do wsparcia technicznego i materiałów szkoleniowych.**
 - **5 lat gwarancji** po rejestracji w aplikacji VentsApp Cloud; standardowo 3 lata
@@ -254,6 +270,29 @@ theme_tbl_df(cw_uni, caption = "Centrale wentylacyjne z uniwersalnym montażem -
 
 Sprawdź szczeóły systemu wentylacyjnego FlexiVent na naszej stronie: [Zobacz szczegóły](https://vents-group.pl/oferta/wentylacja-profesjonalna/system-wentylacyjny-flexivent)
 
+#### Wybrali nasze centrale
+<p>*Kliknij miniaturę, aby powiększyć zdjęcie i poznać szczegóły.*</p>
+
+<div class="gallery">
+
+<a href="images/VUT/1.jpg" data-lightbox="domowa" data-title="VUT 1000 PE EC, TT PRO 160 — Wellclinic, Warszawa ul. Kolejowa 49a/lok U9 01-210">
+  <img src="images/VUT/1.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/VUT/2.jpg" data-lightbox="domowa" data-title="VUT 1500 PE EC — Burger King, Czechowice-Dziedzice ul. Węglowa 17, 43-500">
+  <img src="images/VUT/2.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/VUT/3.jpg" data-lightbox="domowa" data-title="VUT 1500 PE EC — KFC, Piekary Śląskie ul. Kariola Miarki 13 e, 41-940; Kielce Al.. Jerzego Szajnowicza-Iwanowicza 17, 25-001;  Oława Nowy Górnik 55-200; Żary ul. Katowicka 34, 68-200">
+  <img src="images/VUT/3.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/VUT/4.jpg" data-lightbox="domowa" data-title="VUT 3000 PE EC - Mrówka, Radomyśl Wielki ul. Kościuszki 13 A, 39-310">
+  <img src="images/VUT/4.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/VUT/5.jpg" data-lightbox="domowa" data-title="VUT 1500 PE EC - Pizza Hut, Wałbrzych 1 maja 64 58-300">
+  <img src="images/VUT/5.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+
+</div>
+
 ---
 
 # Rekuperacja decentralna
@@ -266,10 +305,37 @@ Sprawdź szczeóły systemu wentylacyjnego FlexiVent na naszej stronie: [Zobacz 
 - Gwarancja ciągłej pracy systemu
 - Wielkość, wyposażenie oraz automatykę centrali dobiera się do indywidualnych potrzeb pomieszczenia
 - Zwiększenie bezpieczeństwa przeciwpożarowego budynku
-- Eliminacja smogu i alergenów pochodzących z pyłków drzew, traw, zbóż, dzięki zastosowaniu filtrów wysokiej klasy
+- Eliminacja smogu i alergenów pochodzących z pyłków drzew, traw, zbóż, dzięki zastosowaniu filtrów wysokiej klasy
 - Jest to system higieniczny: brak potrzeby czyszczenia kanałów wentylacyjnych 
 - Możliwość demontażu i ponowny montaż w innym pomieszczeniu
 - Idealna do modernizacji i pojedynczych pomieszczeń. *(Rynek zbytu: Budynki modernizowane, budynki mieszkalne, budynki biurowe, budynki instytucjonalne, użyteczności publicznej – czytelnie, biblioteki, urzędy, przedszkola i szkoły)*
+
+## **NOWOŚĆ**: Seria Freshpoint
+
+![](images/Freshpoint_c.jpg)
+<h4>**Zalety serii Freshpoint:**</h4>
+
+- **Szerokie zastosowanie** – mieszkania, sypialnie, gabinety, małe sale dydaktyczne
+- Dostępne urządzenia zarówno z **wymiennikiem miedzianym**, jak i wkrótce z **wymiennikiem ceramicznym**.
+- **Sterowanie Wi-Fi** – aplikacja mobilna, harmonogramy, czujniki CO₂/tVOC (Pro)
+- **Prosta obsługa** – wyświetlacz, pilot, sterowanie głosowe
+- **Wbudowany separator strumienia powietrza** - zapobiega mieszaniu się powietrza nawiewanego i wywiewanego
+- **Filtry G3, grzałka skroplin i folia grzewczą** - pozytywnie wpływa na komfort termiczny.
+
+```{r freshpoint_tbl}
+freshpoint <- data.frame(
+  Seria                    = c("Freshpoint 160-E (PRO)", "Freshpoint 200-E (PRO)"),
+  'Wydajność [m³/h]<span title="MAX Przy trybie BOOST">*</span>' = c('~15–70','~15–90'),
+  "Sprawność odzysku ciepła" = c("do 88%", "do 85%"),
+  "Poziom hałasu [dB(A)/3m]" = c("12–42", "15-45"),
+  'Pobór prądu [W]<span title="Pobór mocy urządzenia bez grzałki">*</span>' = c('5–22', "5-22"),
+  check.names = FALSE
+)
+
+theme_tbl_df(freshpoint, caption = "Jednostki z serii Freshpoint – parametry")
+```
+
+Skontaktuj się z nami, aby dowiedzieć się więcej o serii Freshpoint.
 
 ## Seria Vento
 
@@ -291,14 +357,14 @@ r_decentralna <- data.frame(
             "Vento Eco A50-4 S11 Pro",
             "Vento Eco2 A50-4 S11 Pro",
             "Vento inHome Wi-Fi"),
-  `Wydajność [m³/h]` = c("~50",
-                         "~50",
-                         "~108",
-                         "~60",
-                         "~60",
-                         "~50",
-                         "~50",
-                         "~50"),
+  `Wydajność [m³/h]` = c("~15-50",
+                         "~15-50",
+                         "~18-108",
+                         "~10-60",
+                         "~10-60",
+                         "~8-50",
+                         "~8-50",
+                         "~15-50"),
   `Sprawność odzysku ciepła` = c("do 93%",
                                  "do 93%",
                                  "do 87%",
@@ -307,22 +373,22 @@ r_decentralna <- data.frame(
                                  "do 92%",
                                  "do 92%",
                                  "do 88%"),
-  `Poziom hałasu [dB(A)/3m]` = c("11",
-                                 "11",
-                                 "13",
-                                 "24",
-                                 "24",
-                                 "12",
-                                 "12",
-                                 "11"),
-  `Pobór prądu [W]` = c("3,61",
-                         "4,45",
-                         "3,20",
-                         "2,17",
-                         "2,00",
-                         "1,00",
-                         "1,00",
-                         "1,00"),
+  `Poziom hałasu [dB(A)/3m]` = c("11-21",
+                                 "11-21",
+                                 "13-42",
+                                 "24-34",
+                                 "24-34",
+                                 "12-29",
+                                 "12-29",
+                                 "11-27"),
+  `Pobór prądu [W]` = c("3,61-5,20",
+                         "4,45-7,06",
+                         "3,20-18,0",
+                         "2,00-6,40",
+                         "2,17-6,62",
+                         "1,00-4,30",
+                         "1,00-4,30",
+                         "1,70-4,30"),
   Link = c('[Zobacz szczegóły](https://vents-group.pl/oferta/wentylacja-decentralna/rekuperatory-scienne-jednorurowe/vento-expert-a50-1-s10-pro)',
            '[Zobacz szczegóły](https://vents-group.pl/oferta/wentylacja-decentralna/rekuperatory-scienne-jednorurowe/vento-expert-a50-1-s10-w-v-2)',
            '[Zobacz szczegóły](https://vents-group.pl/oferta/wentylacja-decentralna/rekuperatory-scienne-jednorurowe/vento-expert-a100-1-s10-w-v-2)',           
@@ -349,7 +415,7 @@ theme_tbl_df(r_decentralna, caption = "Rekuperatory ścienne jednorurowe - param
 - **Pełna wentylacja** – jednoczesny nawiew i wywiew z odzyskiem ciepła do 96%
 - **Oszczędność energii** – wysokosprawny wymiennik przeciwprądowy ograniczający straty ogrzewania
 - **Komfort zimą** – opcjonalna nagrzewnica elektryczna dogrzewająca nawiewane powietrze
-- **Filtracja powietrza** – wielostopniowe filtry zatrzymujące kurz, alergeny i smog
+- **Filtracja powietrza** – wielostopniowe filtry zatrzymujące kurz, alergeny i smog *(- możliwość stosowania filtrów klasy H13 o skuteczności do 99% zatrzymywania smogu)*
 - **Prosta obsługa** – panel sterowania, pilot lub sterowanie przez Wi-Fi w modelach Freshbox Wi-Fi
 
 ```{r freshbox_tbl}
@@ -419,32 +485,29 @@ theme_tbl_df(civic, caption = "Centrale wentylacyjne do pojedynczych pomieszcze�
 ```
 
 
-## **NOWOŚĆ**: Seria Freshpoint
 
-![](images/Freshpoint_c.jpg)
-<h4>**Zalety serii Freshpoint:**</h4>
+#### Wybrali nasze rekuperatory decentralne
+<p>*Kliknij miniaturę, aby powiększyć zdjęcie.*</p>
 
-- **Szerokie zastosowanie** – mieszkania, sypialnie, gabinety, małe sale dydaktyczne
-- Dostępne urządzenia zarówno z **wymiennikiem ceramicznym**, jak i **miedzianym**.
-- **Sterowanie Wi-Fi** – aplikacja mobilna, harmonogramy, czujniki CO₂/tVOC (Pro)
-- **Prosta obsługa** – wyświetlacz, pilot, sterowanie głosowe
-- **Wbudowany separator strumienia powietrza** - zapobiega mieszaniu się powietrza nawiewanego i wywiewanego
-- **Filtry G3, grzałka skroplin i folia grzewczą** - pozytywnie wpływa na komfort termiczny.
+<div class="gallery">
 
-```{r freshpoint_tbl}
-freshpoint <- data.frame(
-  Seria                    = c("Freshpoint 160-E (PRO)", "Freshpoint 200-E (PRO)"),
-  'Wydajność [m³/h]<span title="MAX Przy trybie BOOST">*</span>' = c('~15–70','~15–90'),
-  "Sprawność odzysku ciepła" = c("do 88%", "do 85%"),
-  "Poziom hałasu [dB(A)/3m]" = c("12–42", "15-45"),
-  'Pobór prądu [W]<span title="Pobór mocy urządzenia bez grzałki">*</span>' = c('5–22', "5-22"),
-  check.names = FALSE
-)
+<a href="images/Decentralna/1.jpg" data-lightbox="decentralna" data-title="">
+  <img src="images/Decentralna/1.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/Decentralna/2.jpg" data-lightbox="decentralna" data-title="">
+  <img src="images/Decentralna/2.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/Decentralna/3.jpg" data-lightbox="decentralna" data-title="">
+  <img src="images/Decentralna/3.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/Decentralna/4.jpg" data-lightbox="decentralna" data-title="">
+  <img src="images/Decentralna/4.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/Decentralna/5.jpg" data-lightbox="decentralna" data-title="">
+  <img src="images/Decentralna/5.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
 
-theme_tbl_df(freshpoint, caption = "Jednostki z serii Freshpoint – parametry")
-```
-
-Skontaktuj się z nami, aby dowiedzieć się więcej o serii Freshpoint.
+</div>
 
 ---
 
@@ -519,7 +582,29 @@ theme_tbl_df(airvents, caption = "Kompaktowe centralne AirVents - parametry tech
 - **Zastosowanie profesjonalne** – idealne do obiektów przemysłowych, handlowych i dużych budynków użyteczności publicznej  
 - **Wykonanie plug&play**
 
+#### Wybrali nasze centrale AirVents
+<p>*Kliknij miniaturę, aby zobaczyć szczegóły.*</p>
+
+<div class="gallery">
+
+<a href="images/AirVents/2_1.jpg" data-lightbox="airvents" data-title="AirVents — Gminne Przedszkole Publiczne Szamocin Ul. Plac Wolności 31, 64-820">
+  <img src="images/AirVents/2.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/AirVents/3_1.jpg" data-lightbox="airvents" data-title="AirVents — Mediaexpert w Parku Handlowym Złotów Ul. Za Dworcem 1D">
+  <img src="images/AirVents/3.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/AirVents/4_1.jpg" data-lightbox="airvents" data-title="AirVents — Hala produkcyjna Ilpea Chełstówek 2a">
+  <img src="images/AirVents/4.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/AirVents/1_1.jpg" data-lightbox="airvents" data-title="AirVents — TAURON Dystrybucja SA Tarnów">
+  <img src="images/AirVents/1.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+<a href="images/AirVents/5_1.jpg" data-lightbox="airvents" data-title="AirVents — Stacja regeneracji węgla aktywnego, Imielin ul. Rzemieślnicza 5A">
+  <img src="images/AirVents/5.jpg" style="height:90px; width:130px; border-radius:5px; margin:3px;">
+</a>
+
+</div>
+
 ---
 
 Dowiedz się więcej na [stronie Vents Group](https://vents-group.pl/).
-
