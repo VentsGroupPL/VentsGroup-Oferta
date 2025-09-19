@@ -517,11 +517,11 @@ theme_tbl_df(civic, caption = "Centrale wentylacyjne do pojedynczych pomieszcze�
 
 ## Centrale kompaktowe
 
-- **Gotowe do pracy** – fabryczna konfiguracja typu *plug & play*, szybki montaż  
-- **Pełne wyposażenie** – wymiennik ciepła, nagrzewnica, wentylatory i automatyka w jednej obudowie  
-- **Oszczędność miejsca** – kompaktowa konstrukcja idealna do budynków z ograniczoną przestrzenią techniczną  
-- **Energooszczędność** – wentylatory EC i wysoka sprawność wymienników  
-- **Łatwa obsługa** – automatyka z panelem sterującym lub aplikacją mobilną  
+- **Gotowe do pracy** – fabryczna konfiguracja typu *plug & play*, szybki montaż
+- **Pełne wyposażenie** – wymiennik ciepła, wentylatory i automatyka w jednej obudowie + wybrane akcesoria
+- **Oszczędność miejsca** – kompaktowa konstrukcja idealna do budynków z ograniczoną przestrzenią techniczną
+- **Energooszczędność** – wentylatory EC i wysoka sprawność wymienników
+- **Łatwa obsługa** – automatyka z panelem sterującym
 
 ![](images/AirVents2.jpg)
 
