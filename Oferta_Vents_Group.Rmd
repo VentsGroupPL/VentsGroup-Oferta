@@ -82,8 +82,94 @@ theme_tbl_df <- function(df, caption = NULL, font_pct = 85) {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
+
+ .lang-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-family: system-ui, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: gray;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .lang-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .lang-btn:active {
+    background-color: #003f88;
+  }
+
+  /* umieszczenie przycisku w prawym górnym rogu */
+  .lang-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+  }
 </style>
 
+<!-- DODANE: Responsywność tabel na mobile (bez zmiany treści) -->
+<style>
+/* lepsze przewijanie dotykowe (nie zmienia oryginalnego scroll_css) */
+.table-wrap, .table-responsive { overflow-x:auto; -webkit-overflow-scrolling: touch; }
+
+/* MOBILE: układ kartowy dla kableExtra */
+@media (max-width: 768px) {
+  table.kable thead { display: none; }
+  table.kable, table.kable tbody, table.kable tr, table.kable td {
+    display: block; width: 100%;
+  }
+  table.kable tr {
+    margin: 10px 0; padding: 8px;
+    border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.04);
+    background: #fff;
+  }
+  table.kable td {
+    position: relative; padding-left: 40%;
+    text-align: left !important;
+    white-space: normal !important;    /* nadpisuje nowrap z column_spec wyłącznie na mobile */
+    vertical-align: top;
+    word-break: break-word;
+  }
+  table.kable td::before {
+    content: attr(data-label);
+    position: absolute; left: 10px; top: 8px; width: 35%;
+    font-weight: 600; color: #555; line-height: 1.2;
+    white-space: normal;
+  }
+}
+</style>
+
+<!-- DODANE: Skrypt etykiet data-label dla komórek (pobiera nagłówki thead) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('table.kable').forEach(function (tbl) {
+    var heads = Array.from(tbl.querySelectorAll('thead th')).map(function(th){ return th.textContent.trim(); });
+    tbl.querySelectorAll('tbody tr').forEach(function (tr) {
+      Array.from(tr.children).forEach(function (td, i) {
+        if (!td.hasAttribute('data-label')) {
+          td.setAttribute('data-label', heads[i] || '');
+        }
+      });
+    });
+  });
+});
+</script>
+
+```{=html}
+
+<div class="lang-switch">
+  <a href="https://ventsgrouppl.github.io/VentsGroup-Offer/" class="lang-btn" target="_self">       
+  <img src="images/EN.jpg" alt="English" style="height:20px; vertical-align:middle;">
+  </a>
+</div>
+```
 ![](images/VG.jpg)
 
 # O nas
@@ -576,7 +662,7 @@ theme_tbl_df(airvents, caption = "Kompaktowe centralne AirVents - parametry tech
 ```
 
 - **Elastyczność konfiguracji** – możliwość zestawiania modułów (nagrzewnice, chłodnice, filtry, tłumiki) zgodnie z potrzebami inwestycji  
-- **Skalowalność – od małych** do bardzo dużych systemów wentylacyjnych  
+- **Skalowalność** – od małych do bardzo dużych systemów wentylacyjnych  
 - **Zaawansowana automatyka** – Kompatybilność z systemami inteligentnego sterowania budynkami (SCADA,BMS)
 - **Serwis i konserwacja** – łatwy dostęp do poszczególnych sekcji, uproszczona eksploatacja  
 - **Zastosowanie profesjonalne** – idealne do obiektów przemysłowych, handlowych i dużych budynków użyteczności publicznej  
