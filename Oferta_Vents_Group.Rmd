@@ -1,7 +1,7 @@
 ---
 title: "Oferta Vents Group"
 lang: pl
-encoding: UTF-8
+encoding: "UTF-8"
 output:
   html_document:
     theme: cosmo
@@ -11,6 +11,9 @@ output:
     toc_float:
       collapsed: true
       smooth_scroll: true
+  pdf_document:
+    toc: true
+    toc_depth: '3'
 ---
 
 ```{r setup, include=FALSE}
@@ -60,7 +63,7 @@ theme_tbl_df <- function(df, caption = NULL, font_pct = 85) {
 ```
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 <style>
 `r scroll_css`
@@ -693,4 +696,14 @@ theme_tbl_df(airvents, caption = "Kompaktowe centralne AirVents - parametry tech
 
 ---
 
-Dowiedz się więcej na [stronie Vents Group](https://vents-group.pl/).
+# Jesteśmy w grupie Blauberg
+
+
+Przedstawicielstwa i oddziały partnerskie Blauberg Group znajdują się w wielu krajach, na różnych kontynentach, aby zapewnić terminowość dostaw produktów i usług do wszystkich klientów. 
+
+W zakładach produkcyjnych o powierzchni ponad 210 000 m², zatrudniamy przeszło 3 500 wysoko wykwalifikowanych specjalistów, którzy wytwarzają produkty najwyższej jakości, oferowane w ponad 120 krajach na całym świecie.
+
+
+![](images/mapka.jpg)
+
+Dowiedz się więcej na [stronie Vents Group](https://vents-group.pl/) lub [blauberg.pl](https://www.blauberg.pl/).
